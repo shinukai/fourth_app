@@ -3,8 +3,11 @@
 <p>Hi <%= @user.name %>,</p>
 
 <p>
-Welcome to the Only View! Click on the link below to activate your account:
+アカウントを有効化するためには
 </p>
 
-<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+<%= link_to "こちら", edit_account_activation_url(@user.activation_token,
                                                     email: @user.email) %>
+<p>
+を押してください。
+</p>                                                    
